@@ -41,7 +41,6 @@ class GameEngine:
         # Simplified version of round play
         while True:  # Loop until break condition met
             current_player = self.players[self.current_player_index]
-            print(f"Player {self.current_player_index + 1}'s turn")
 
             self.print_game_state()
 
@@ -97,6 +96,9 @@ class GameEngine:
             player.print_board()
             print("")  # Extra newline for spacing
 
+        print(f"Player {self.current_player_index + 1}'s turn")
+
+
         
     def end_round(self):
         """Handle the end of a round: Move tiles, score points, and check game over condition."""
@@ -110,7 +112,7 @@ class GameEngine:
                 self.starting_player_index = i  # Keep track of the new starting player
                 break  # Only one player can have the starting player tile, so break once found
 
-            
+
         for player in self.players:
             score = player.move_tiles_to_wall_and_score()  # Assuming this method returns the score for the round
             player.score += score  # Assuming each player has a 'score' attribute
@@ -130,18 +132,37 @@ class GameEngine:
             factory.add_tiles(self.tile_bag.draw_tiles(4))
 
     def select_factory(self):
+        # Determine if the central factory has tiles other than just the starting player tile
+        central_has_valid_tiles = any(not isinstance(tile, StartingPlayerTile) for tile in self.central_factory.tiles)
+
+        # List non-empty factories and include the central factory if it has valid tiles
+        non_empty_factories = [(i, factory) for i, factory in enumerate(self.factories, start=1) if factory.tiles]
+        non_empty_factory_indices = [str(i) for i, factory in non_empty_factories]
+
+        central_factory_option = ""
+        if central_has_valid_tiles:  # Only add central factory as an option if it has valid tiles
+            central_factory_option = "0,"
+
+        if not non_empty_factories and not central_has_valid_tiles:
+            print("No valid tile selection options available. Please check the game state.")
+            return None
+
         while True:
             try:
-                factory_index = int(input(f"Choose a factory (1-{len(self.factories)}) or 0 for Central Factory: ")) - 1
-                if -1 <= factory_index < len(self.factories):
+                selection_prompt = f"Choose a factory by number (Options: {central_factory_option} {', '.join(non_empty_factory_indices)}): "
+                factory_index = input(selection_prompt).strip()
+                if factory_index == "0" and central_has_valid_tiles:
+                    return -1  # Convention to represent the central factory as a valid selection
+                factory_index = int(factory_index) - 1
+                if str(factory_index + 1) in non_empty_factory_indices:
                     return factory_index
                 else:
-                    print(f"Please enter a number between 0 and {len(self.factories)}.")
+                    print("Selected factory is empty, does not exist, or only contains the Starting Player Tile. Please choose from the available options.")
             except ValueError:
-                print("Invalid input. Please enter a number.")
+                print("Invalid input. Please enter a valid option.")
 
     def select_color(self, selected_factory):
-        available_colors = {tile.color.name for tile in selected_factory.tiles}
+        available_colors = {tile.color.name.upper() for tile in selected_factory.tiles if not isinstance(tile, StartingPlayerTile)}
         print(f"Available colors: {', '.join(sorted(available_colors))}")
         while True:
             color_input = input("Choose a color from the available options: ").upper()
