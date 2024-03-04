@@ -99,3 +99,82 @@ class PlayerBoard:
         # If there's more tiles than available space, only add up to the available space
         tiles_to_add = tiles[:available_space]
         self.floor_line.extend(tiles_to_add)
+
+    def move_tiles_to_wall_and_score(self):
+        """
+        Move tiles from completed pattern lines to the wall and score points accordingly.
+        """
+        score = 0
+        for row_index, pattern_line in enumerate(self.pattern_lines):
+            # Check if the pattern line is complete
+            if None not in pattern_line[:row_index + 1]:
+                # Find the correct position on the wall
+                tile_color = pattern_line[row_index].color
+                column_index = self.wall_pattern[row_index].index(tile_color)
+                
+                # Move the tile to the wall
+                self.wall[row_index][column_index] = pattern_line[row_index]
+                self.pattern_lines[row_index] = [None] * (row_index + 1)  # Reset the pattern line
+                
+                # Calculate score for this move
+                score += self.calculate_score_for_tile(row_index, column_index)
+
+        # Return the total score for this round
+        return score
+    
+    def calculate_score_for_tile(self, row, column):
+        """
+        Calculate the score for placing a tile on the wall, considering adjacent tiles.
+        """
+        score = 1  # Base score for placing a tile
+        
+        # Check horizontally
+        row_score = 1  # Start with 1 for the placed tile
+        # Check left
+        moving_col = column - 1
+        while moving_col >= 0 and self.wall[row][moving_col] is not None:
+            row_score += 1
+            moving_col -= 1
+        # Check right
+        moving_col = column + 1
+        while moving_col < 5 and self.wall[row][moving_col] is not None:
+            row_score += 1
+            moving_col += 1
+        if row_score > 1:  # If there are adjacent tiles horizontally, add to score
+            score += row_score - 1  # Subtract 1 because the tile itself was counted twice
+        
+        # Check vertically
+        column_score = 1  # Start with 1 for the placed tile
+        # Check up
+        moving_row = row - 1
+        while moving_row >= 0 and self.wall[moving_row][column] is not None:
+            column_score += 1
+            moving_row -= 1
+        # Check down
+        moving_row = row + 1
+        while moving_row < 5 and self.wall[moving_row][column] is not None:
+            column_score += 1
+            moving_row += 1
+        if column_score > 1:  # If there are adjacent tiles vertically, add to score
+            score += column_score - 1  # Subtract 1 for the same reason
+        
+        return score
+    
+    def end_round(self):
+        """Handle the end of a round: Move tiles, score points, and check game over condition."""
+        for player in self.players:
+            score = player.move_tiles_to_wall_and_score()  # Assuming this method returns the score for the round
+            player.score += score  # Assuming each player has a 'score' attribute
+            print(f"{player.name} scored {score} points this round.")
+
+        self.refresh_factories()
+        self.check_game_over()
+
+    def refresh_factories(self):
+        """Refill the factories with tiles from the tile bag for the new round."""
+        # Check if the tile bag is empty and needs to be refilled with discarded tiles
+        # This part depends on your TileBag implementation. 
+        # For simplicity, assuming tile_bag automatically handles refills
+        self.central_factory.clear()  # Clear the central factory for the new round
+        for factory in self.factories:
+            factory.add_tiles(self.tile_bag.draw_tiles(4))
