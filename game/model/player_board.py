@@ -7,6 +7,7 @@ class PlayerBoard:
         self.pattern_lines = [[None, None, None, None, None] for _ in range(5)]  # 5 pattern lines, up to 5 tiles each
         self.wall = [[None for _ in range(5)] for _ in range(5)]  # 5x5 grid, initially empty
         self.floor_line = []  # Will hold tiles that overflow or are not placed
+        self.box_lid = None
 
         # Define the fixed color pattern on the wall
         self.wall_pattern = [
@@ -47,7 +48,7 @@ class PlayerBoard:
 
     def place_starting_player_tile_on_floor_line(self):
         """Place the starting player tile on the floor line."""
-        self.add_tiles_to_floor_line([StartingPlayerTile()])
+        self.floor_line.append(StartingPlayerTile())
 
     def move_tiles_to_wall(self):
         """Move tiles from the pattern lines to the wall, based on the rules."""
@@ -83,9 +84,11 @@ class PlayerBoard:
 
     # Additional methods for scoring, handling the floor line, etc., can be added here.
         
+    #TODO: Check the process of adding tiles to floor line
     def add_tiles_to_floor_line(self, tiles):
         """
         Add tiles to the floor line, respecting the maximum capacity of 7 tiles.
+        Excess tiles are added to the box lid.
         
         :param tiles: A list of Tile objects to be added to the floor line.
         """
@@ -93,31 +96,51 @@ class PlayerBoard:
         # Calculate available space on the floor line
         available_space = max_capacity - len(self.floor_line)
 
-        if available_space <= 0:
-            return  # If no space is available, ignore the tiles
+        if available_space > 0:
+            # If there's space, add tiles up to the available space
+            tiles_to_add = tiles[:available_space]
+            self.floor_line.extend(tiles_to_add)
+            excess_tiles = tiles[available_space:]
+        else:
+            # If no space is available, all tiles are considered excess
+            excess_tiles = tiles
 
-        # If there's more tiles than available space, only add up to the available space
-        tiles_to_add = tiles[:available_space]
-        self.floor_line.extend(tiles_to_add)
+        # Add any excess tiles to the box lid
+        if excess_tiles:
+            self.box_lid.add_tiles(excess_tiles)
 
     def move_tiles_to_wall_and_score(self):
         """
-        Move tiles from completed pattern lines to the wall and score points accordingly.
+        Move tiles from completed pattern lines to the wall, score points, and move remaining tiles to the box lid.
         """
         score = 0
         for row_index, pattern_line in enumerate(self.pattern_lines):
-            # Check if the pattern line is complete
+            # Identify completed pattern lines
             if None not in pattern_line[:row_index + 1]:
-                # Find the correct position on the wall
-                tile_color = pattern_line[row_index].color
-                column_index = self.wall_pattern[row_index].index(tile_color)
+                # Assume the tile color is the same for all in the line, take the first one
+                tile_color = pattern_line[0].color if pattern_line[0] is not None else None
                 
-                # Move the tile to the wall
-                self.wall[row_index][column_index] = pattern_line[row_index]
-                self.pattern_lines[row_index] = [None] * (row_index + 1)  # Reset the pattern line
+                if tile_color is not None:
+                    # Find the correct position on the wall based on the color pattern
+                    column_index = self.wall_pattern[row_index].index(tile_color)
+                    
+                    # Move one tile to the wall
+                    if self.wall[row_index][column_index] is None:  # Ensure the spot is empty
+                        self.wall[row_index][column_index] = Tile(tile_color)
+                        # Calculate score for this move
+                        score += self.calculate_score_for_tile(row_index, column_index)
+                    
+                    # Move the remaining tiles in the completed line to the box lid
+                    excess_tiles = [tile for tile in pattern_line if tile is not None][1:]  # Skip the first tile which was moved to the wall
+                    if excess_tiles:
+                        self.box_lid.add_tiles(excess_tiles)
                 
-                # Calculate score for this move
-                score += self.calculate_score_for_tile(row_index, column_index)
+                # Clear the pattern line after moving tiles to the wall and box lid
+                self.pattern_lines[row_index] = [None] * 5
+
+        # Score the floor line and clear it
+        score += self.score_floor_line()
+        self.floor_line = []
 
         # Return the total score for this round
         return score
@@ -160,21 +183,13 @@ class PlayerBoard:
         
         return score
     
-    def end_round(self):
-        """Handle the end of a round: Move tiles, score points, and check game over condition."""
-        for player in self.players:
-            score = player.move_tiles_to_wall_and_score()  # Assuming this method returns the score for the round
-            player.score += score  # Assuming each player has a 'score' attribute
-            print(f"{player.name} scored {score} points this round.")
-
-        self.refresh_factories()
-        self.check_game_over()
-
-    def refresh_factories(self):
-        """Refill the factories with tiles from the tile bag for the new round."""
-        # Check if the tile bag is empty and needs to be refilled with discarded tiles
-        # This part depends on your TileBag implementation. 
-        # For simplicity, assuming tile_bag automatically handles refills
-        self.central_factory.clear()  # Clear the central factory for the new round
-        for factory in self.factories:
-            factory.add_tiles(self.tile_bag.draw_tiles(4))
+    def score_floor_line(self):
+        penalties = [1, 1, 2, 2, 2, 3, 3]  # Base penalties for the first 7 tiles
+        score = -sum(penalties[:len(self.floor_line)])  # Calculate penalties for up to the first 7 tiles
+        if len(self.floor_line) > 7:  # For more than 7 tiles, each additional tile incurs -3 points
+            score -= (len(self.floor_line) - 7) * 3
+        return score
+    
+    def has_starting_player_tile(self):
+        """Check if this player board has the starting player tile on the floor line."""
+        return any(isinstance(tile, StartingPlayerTile) for tile in self.floor_line)

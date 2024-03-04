@@ -1,3 +1,4 @@
+#TODO: Add all the remaining tiles into the boxlid
 class BoxLid:
     def __init__(self):
         self.tiles = []

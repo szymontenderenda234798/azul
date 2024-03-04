@@ -2,6 +2,7 @@ from model.factory import Factory
 from model.tile_bag import TileBag
 from model.central_factory import CentralFactory
 from model.starting_player_tile import StartingPlayerTile
+from model.box_lid import BoxLid
 from enums.tile_color import TileColor
 
 class GameEngine:
@@ -9,7 +10,8 @@ class GameEngine:
         self.players = players
         self.player_count = len(players)
         self.game_over = False
-        self.tile_bag = TileBag()
+        self.box_lid = BoxLid()
+        self.tile_bag = TileBag(self.box_lid)
         self.factories = []
         self.current_player_index = 0
         self.setup_game()
@@ -28,6 +30,9 @@ class GameEngine:
             factory.add_tiles(self.tile_bag.draw_tiles(4))
 
         self.central_factory = CentralFactory()
+
+        for player in self.players:
+            player.board.box_lid = self.box_lid
 
     def next_player(self):
         self.current_player_index = (self.current_player_index + 1) % self.player_count
@@ -91,6 +96,38 @@ class GameEngine:
         for player in self.players:
             player.print_board()
             print("")  # Extra newline for spacing
+
+        
+    def end_round(self):
+        """Handle the end of a round: Move tiles, score points, and check game over condition."""
+        for i, player in enumerate(self.players):
+            if player.has_starting_player_tile():  # You need to implement this method in PlayerBoard
+                # Assuming the CentralFactory has a method to add the starting player tile
+                self.central_factory.add_starting_player_tile()
+
+                # Set this player as the starting player for the next round
+                self.current_player_index = i
+                self.starting_player_index = i  # Keep track of the new starting player
+                break  # Only one player can have the starting player tile, so break once found
+
+            
+        for player in self.players:
+            score = player.move_tiles_to_wall_and_score()  # Assuming this method returns the score for the round
+            player.score += score  # Assuming each player has a 'score' attribute
+            print(f"{player.name} scored {score} points this round.")
+
+        self.refresh_factories()
+        self.check_game_over()
+
+    #TODO: Implement the following methods
+    def refresh_factories(self):
+        """Refill the factories with tiles from the tile bag for the new round."""
+        # Check if the tile bag is empty and needs to be refilled with discarded tiles
+        # This part depends on your TileBag implementation. 
+        # For simplicity, assuming tile_bag automatically handles refills
+        self.central_factory.clear()  # Clear the central factory for the new round
+        for factory in self.factories:
+            factory.add_tiles(self.tile_bag.draw_tiles(4))
 
     def select_factory(self):
         while True:

@@ -4,11 +4,11 @@ from model.box_lid import BoxLid
 import random
 
 class TileBag:
-    def __init__(self):
+    def __init__(self, box_lid):
         # Initialize the bag with 20 tiles of each color, using the TileColor enum
         self.tiles = [Tile(color) for color in TileColor for _ in range(20)]
         random.shuffle(self.tiles)
-        self.box_lid = BoxLid()
+        self.box_lid = box_lid
 
     def draw_tiles(self, number):
         """Draw a specified number of tiles from the bag. Refill from the box lid if empty."""

@@ -18,3 +18,6 @@ class Player:
     def print_board(self):
         print(f"{self.name}'s board:")
         self.board.print_board()
+
+    def has_starting_player_tile(self):
+        return self.board.has_starting_player_tile()

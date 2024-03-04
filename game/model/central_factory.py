@@ -13,3 +13,6 @@ class CentralFactory(Factory):
         if not self.starting_player_marker_taken:
             self.starting_player_marker_taken = True
         return super().remove_and_return_tiles_of_color(tile_color)
+    
+    def add_starting_player_tile(self):
+        self.tiles.append(StartingPlayerTile())
