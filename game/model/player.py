@@ -15,6 +15,15 @@ class Player:
     def take_turn(self):
         pass  # This will be implemented in subclasses
 
+    def select_factory(self):
+        pass
+
+    def select_color(self, factory):
+        pass
+
+    def select_pattern_line(self):
+        pass
+
     def print_board(self):
         print(f"{self.name}'s board:")
         self.board.print_board()
