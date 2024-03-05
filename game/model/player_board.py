@@ -130,11 +130,7 @@ class PlayerBoard:
 
         # Add any excess tiles to the box lid
         if excess_tiles:
-            print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
-            print(f"Floor line is full! Adding {len(excess_tiles)} excess tiles to the box lid.")
-            print(f"box lid tiles: {len(self.box_lid.tiles)}")
             self.box_lid.add_tiles(excess_tiles)
-            print(f"box lid tiles after adding: {len(self.box_lid.tiles)}")
 
 
     def move_tiles_to_wall_and_score(self):
@@ -161,11 +157,6 @@ class PlayerBoard:
                     # Move the remaining tiles in the completed line to the box lid
                     excess_tiles = [tile for tile in pattern_line if tile is not None][1:]  # Skip the first tile which was moved to the wall
                     if excess_tiles:
-                        print(f"box lid size before moving: {len(self.box_lid.tiles)}")
-                        print(f"Moving {len(excess_tiles)} excess tiles to the box lid.")
-                        print(f"box lid size after moving: {len(self.box_lid.tiles)}")
-                        print(f"excess tiles: {[tile.name for tile in excess_tiles]}")
-
                         self.box_lid.add_tiles(excess_tiles)
                 
                 # Clear the pattern line after moving tiles to the wall and box lid
@@ -173,7 +164,6 @@ class PlayerBoard:
 
         # Score the floor line and clear it
         score += self.score_floor_line()
-        print("Floor line after scoring: ", [tile.name for tile in self.floor_line])
         tiles_to_box_lid = [tile for tile in self.floor_line if not isinstance(tile, StartingPlayerTile)]
         self.box_lid.add_tiles(tiles_to_box_lid)
         self.floor_line = []
@@ -222,7 +212,6 @@ class PlayerBoard:
     def score_floor_line(self):
         penalties = [1, 1, 2, 2, 2, 3, 3]  # Base penalties for the first 7 tiles
         score = -sum(penalties[:len(self.floor_line)])  # Calculate penalties for up to the first 7 tiles
-        print(f"Penalties for the floor line: {score} points.")
         if len(self.floor_line) > 7:  # For more than 7 tiles, each additional tile incurs -3 points
             score -= (len(self.floor_line) - 7) * 3
         return score
