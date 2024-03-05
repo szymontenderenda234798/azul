@@ -1,0 +1,290 @@
+Points after round: 1 
+Random Player 1: -13 points
+Random Player 2: 0 points
+Random Player 3: -1 points
+Random Player 4: -11 points
+Points after round: 2 
+Random Player 1: -18 points
+Random Player 2: -8 points
+Random Player 3: -2 points
+Random Player 4: -24 points
+Points after round: 3 
+Random Player 1: -30 points
+Random Player 2: -21 points
+Random Player 3: -13 points
+Random Player 4: -23 points
+Points after round: 4 
+Random Player 1: -44 points
+Random Player 2: -32 points
+Random Player 3: -27 points
+Random Player 4: -27 points
+Points after round: 5 
+Random Player 1: -55 points
+Random Player 2: -46 points
+Random Player 3: -30 points
+Random Player 4: -39 points
+Points after round: 6 
+Random Player 1: -69 points
+Random Player 2: -58 points
+Random Player 3: -40 points
+Random Player 4: -51 points
+Points after round: 7 
+Random Player 1: -81 points
+Random Player 2: -68 points
+Random Player 3: -51 points
+Random Player 4: -64 points
+Points after round: 8 
+Random Player 1: -93 points
+Random Player 2: -73 points
+Random Player 3: -61 points
+Random Player 4: -78 points
+Points after round: 9 
+Random Player 1: -106 points
+Random Player 2: -77 points
+Random Player 3: -75 points
+Random Player 4: -92 points
+Points after round: 10 
+Random Player 1: -120 points
+Random Player 2: -85 points
+Random Player 3: -74 points
+Random Player 4: -105 points
+Points after round: 11 
+Random Player 1: -129 points
+Random Player 2: -89 points
+Random Player 3: -85 points
+Random Player 4: -117 points
+Points after round: 12 
+Random Player 1: -138 points
+Random Player 2: -103 points
+Random Player 3: -90 points
+Random Player 4: -126 points
+Points after round: 1 
+Random Player 1: -5 points
+Random Player 2: -13 points
+Random Player 3: -5 points
+Random Player 4: 1 points
+Points after round: 2 
+Random Player 1: -14 points
+Random Player 2: -12 points
+Random Player 3: -5 points
+Random Player 4: -12 points
+Points after round: 3 
+Random Player 1: -17 points
+Random Player 2: -16 points
+Random Player 3: -16 points
+Random Player 4: -19 points
+Points after round: 4 
+Random Player 1: -28 points
+Random Player 2: -19 points
+Random Player 3: -30 points
+Random Player 4: -26 points
+Points after round: 5 
+Random Player 1: -42 points
+Random Player 2: -30 points
+Random Player 3: -44 points
+Random Player 4: -25 points
+Points after round: 6 
+Random Player 1: -56 points
+Random Player 2: -42 points
+Random Player 3: -41 points
+Random Player 4: -31 points
+Points after round: 1 
+Random Player 1: -6 points
+Random Player 2: -2 points
+Random Player 3: -14 points
+Random Player 4: -4 points
+Points after round: 2 
+Random Player 1: -19 points
+Random Player 2: -4 points
+Random Player 3: -13 points
+Random Player 4: -12 points
+Points after round: 3 
+Random Player 1: -26 points
+Random Player 2: -8 points
+Random Player 3: -25 points
+Random Player 4: -22 points
+Points after round: 4 
+Random Player 1: -29 points
+Random Player 2: -22 points
+Random Player 3: -38 points
+Random Player 4: -34 points
+Points after round: 5 
+Random Player 1: -41 points
+Random Player 2: -28 points
+Random Player 3: -45 points
+Random Player 4: -45 points
+Points after round: 6 
+Random Player 1: -53 points
+Random Player 2: -42 points
+Random Player 3: -56 points
+Random Player 4: -59 points
+Points after round: 7 
+Random Player 1: -55 points
+Random Player 2: -56 points
+Random Player 3: -58 points
+Random Player 4: -73 points
+Points after round: 8 
+Random Player 1: -64 points
+Random Player 2: -64 points
+Random Player 3: -64 points
+Random Player 4: -75 points
+Points after round: 9 
+Random Player 1: -78 points
+Random Player 2: -71 points
+Random Player 3: -78 points
+Random Player 4: -89 points
+Points after round: 10 
+Random Player 1: -92 points
+Random Player 2: -83 points
+Random Player 3: -82 points
+Random Player 4: -103 points
+Points after round: 11 
+Random Player 1: -106 points
+Random Player 2: -93 points
+Random Player 3: -96 points
+Random Player 4: -108 points
+Points after round: 12 
+Random Player 1: -114 points
+Random Player 2: -107 points
+Random Player 3: -97 points
+Random Player 4: -110 points
+Points after round: 1 
+Random Player 1: 0 points
+Random Player 2: -13 points
+Random Player 3: -6 points
+Random Player 4: -1 points
+Points after round: 2 
+Random Player 1: -2 points
+Random Player 2: -27 points
+Random Player 3: -20 points
+Random Player 4: -1 points
+Points after round: 3 
+Random Player 1: -16 points
+Random Player 2: -39 points
+Random Player 3: -31 points
+Random Player 4: -10 points
+Points after round: 4 
+Random Player 1: -20 points
+Random Player 2: -47 points
+Random Player 3: -44 points
+Random Player 4: -20 points
+Points after round: 5 
+Random Player 1: -23 points
+Random Player 2: -60 points
+Random Player 3: -56 points
+Random Player 4: -32 points
+Points after round: 6 
+Random Player 1: -37 points
+Random Player 2: -68 points
+Random Player 3: -65 points
+Random Player 4: -36 points
+Points after round: 7 
+Random Player 1: -51 points
+Random Player 2: -73 points
+Random Player 3: -69 points
+Random Player 4: -50 points
+Points after round: 8 
+Random Player 1: -65 points
+Random Player 2: -87 points
+Random Player 3: -83 points
+Random Player 4: -58 points
+Points after round: 9 
+Random Player 1: -68 points
+Random Player 2: -95 points
+Random Player 3: -92 points
+Random Player 4: -72 points
+Points after round: 10 
+Random Player 1: -79 points
+Random Player 2: -102 points
+Random Player 3: -106 points
+Random Player 4: -84 points
+Points after round: 11 
+Random Player 1: -86 points
+Random Player 2: -116 points
+Random Player 3: -111 points
+Random Player 4: -90 points
+Points after round: 12 
+Random Player 1: -100 points
+Random Player 2: -130 points
+Random Player 3: -115 points
+Random Player 4: -101 points
+Points after round: 13 
+Random Player 1: -110 points
+Random Player 2: -144 points
+Random Player 3: -126 points
+Random Player 4: -112 points
+Points after round: 14 
+Random Player 1: -106 points
+Random Player 2: -155 points
+Random Player 3: -134 points
+Random Player 4: -126 points
+Points after round: 15 
+Random Player 1: -109 points
+Random Player 2: -169 points
+Random Player 3: -143 points
+Random Player 4: -140 points
+Points after round: 1 
+Random Player 1: -13 points
+Random Player 2: 0 points
+Random Player 3: 2 points
+Random Player 4: -4 points
+Points after round: 2 
+Random Player 1: -24 points
+Random Player 2: -8 points
+Random Player 3: -12 points
+Random Player 4: -3 points
+Points after round: 3 
+Random Player 1: -27 points
+Random Player 2: -21 points
+Random Player 3: -19 points
+Random Player 4: -17 points
+Points after round: 4 
+Random Player 1: -41 points
+Random Player 2: -32 points
+Random Player 3: -21 points
+Random Player 4: -29 points
+Points after round: 5 
+Random Player 1: -51 points
+Random Player 2: -43 points
+Random Player 3: -32 points
+Random Player 4: -41 points
+Points after round: 6 
+Random Player 1: -56 points
+Random Player 2: -57 points
+Random Player 3: -44 points
+Random Player 4: -55 points
+Points after round: 7 
+Random Player 1: -64 points
+Random Player 2: -60 points
+Random Player 3: -55 points
+Random Player 4: -66 points
+Points after round: 8 
+Random Player 1: -78 points
+Random Player 2: -74 points
+Random Player 3: -69 points
+Random Player 4: -71 points
+Points after round: 9 
+Random Player 1: -88 points
+Random Player 2: -88 points
+Random Player 3: -81 points
+Random Player 4: -84 points
+Points after round: 10 
+Random Player 1: -94 points
+Random Player 2: -100 points
+Random Player 3: -95 points
+Random Player 4: -92 points
+Points after round: 11 
+Random Player 1: -99 points
+Random Player 2: -110 points
+Random Player 3: -109 points
+Random Player 4: -106 points
+Points after round: 12 
+Random Player 1: -103 points
+Random Player 2: -124 points
+Random Player 3: -115 points
+Random Player 4: -105 points
+Points after round: 13 
+Random Player 1: -107 points
+Random Player 2: -135 points
+Random Player 3: -128 points
+Random Player 4: -111 points

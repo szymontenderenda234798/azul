@@ -4,6 +4,7 @@ from model.central_factory import CentralFactory
 from model.starting_player_tile import StartingPlayerTile
 from model.box_lid import BoxLid
 from enums.tile_color import TileColor
+from neural_network_interface import NeuralNetworkInterface
 
 class GameEngine:
     def __init__(self, players):
@@ -12,6 +13,7 @@ class GameEngine:
         self.game_over = False
         self.box_lid = BoxLid()
         self.tile_bag = TileBag(self.box_lid)
+        self.neural_network_interface = NeuralNetworkInterface(self)
         self.factories = []
         self.current_player_index = 0
         self.setup_game()
@@ -76,6 +78,7 @@ class GameEngine:
 
     def play_turn(self, player):
         print(f"\n-------------------------------------\n{player.name}'s turn\n-------------------------------------")
+        self.neural_network_interface.game_state_to_network_input()
 
         self.print_game_state()
         factory_index, selected_color, pattern_line_index = player.make_decision()
