@@ -11,6 +11,9 @@ class TileBag:
         self.box_lid = box_lid
 
     def draw_tiles(self, number):
+        print("Drawing tiles from the tile bag.")
+        print(f"Tile bag has {len(self.tiles)} tiles.")
+        print(f"Box lid has {len(self.box_lid.tiles)} tiles.")
         """Draw a specified number of tiles from the bag. Refill from the box lid if empty."""
         if len(self.tiles) < number:  # Check if there are not enough tiles
             if not self.box_lid.tiles:

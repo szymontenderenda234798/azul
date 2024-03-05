@@ -7,7 +7,6 @@ class PlayerBoard:
         self.pattern_lines = [[None, None, None, None, None] for _ in range(5)]  # 5 pattern lines, up to 5 tiles each
         self.wall = [[None for _ in range(5)] for _ in range(5)]  # 5x5 grid, initially empty
         self.floor_line = []  # Will hold tiles that overflow or are not placed
-        self.box_lid = None
 
         # Define the fixed color pattern on the wall
         self.wall_pattern = [
@@ -26,25 +25,39 @@ class PlayerBoard:
         :param pattern_line_index: The index of the pattern line (0-4).
         :param tile_count: The number of tiles being placed.
         """
-        pattern_line = self.pattern_lines[pattern_line_index]
-        line_capacity = pattern_line_index + 1  # The capacity matches the row index + 1
-        existing_tiles = sum(1 for tile in pattern_line if tile is not None)
-        space_left = line_capacity - existing_tiles
-
-        # Calculate how many tiles can be actually placed in the pattern line
-        tiles_to_place = min(space_left, tile_count)
-
-        if existing_tiles == 0 or (pattern_line[0] is not None and pattern_line[0].color == tile_color):
-            # Place as many tiles as possible into the pattern line
-            for i in range(existing_tiles, existing_tiles + tiles_to_place):
-                pattern_line[i] = Tile(tile_color)
-            # Any excess tiles go to the floor line
-            excess_tiles = tile_count - tiles_to_place
-            if excess_tiles > 0:
-                self.add_tiles_to_floor_line([Tile(tile_color)] * excess_tiles)
-        else:
-            # If the pattern line has tiles of a different color, use the new method to add all tiles to the floor line
+        if self.is_color_on_wall(tile_color, pattern_line_index):
+            # Redirect the tiles to the floor line
             self.add_tiles_to_floor_line([Tile(tile_color)] * tile_count)
+        else:
+            pattern_line = self.pattern_lines[pattern_line_index]
+            line_capacity = pattern_line_index + 1  # The capacity matches the row index + 1
+            existing_tiles = sum(1 for tile in pattern_line if tile is not None)
+            space_left = line_capacity - existing_tiles
+
+            # Calculate how many tiles can be actually placed in the pattern line
+            tiles_to_place = min(space_left, tile_count)
+
+            if existing_tiles == 0 or (pattern_line[0] is not None and pattern_line[0].color == tile_color):
+                # Place as many tiles as possible into the pattern line
+                for i in range(existing_tiles, existing_tiles + tiles_to_place):
+                    pattern_line[i] = Tile(tile_color)
+                # Any excess tiles go to the floor line
+                excess_tiles = tile_count - tiles_to_place
+                if excess_tiles > 0:
+                    self.add_tiles_to_floor_line([Tile(tile_color)] * excess_tiles)
+            else:
+                # If the pattern line has tiles of a different color, use the new method to add all tiles to the floor line
+                self.add_tiles_to_floor_line([Tile(tile_color)] * tile_count)
+
+    def is_color_on_wall(self, tile_color, pattern_line_index):
+        """
+        Check if a tile of the specified color is already on the wall in the row
+        corresponding to the pattern line index.
+        """
+        # This method assumes the wall_pattern defines the placement rules for tiles
+        # and that self.wall[row][col] is None if no tile is placed at that position.
+        color_position = self.wall_pattern[pattern_line_index].index(tile_color)
+        return self.wall[pattern_line_index][color_position] is not None
 
     def place_starting_player_tile_on_floor_line(self):
         """Place the starting player tile on the floor line."""
@@ -65,26 +78,36 @@ class PlayerBoard:
                     pass
 
     def print_board(self):
+        self.print_pattern_lines()
+        print()
+        self.print_wall()
+        print()
+        self.print_floor_line()
+
+    def print_pattern_lines(self):
         print("Pattern Lines:")
         for index, line in enumerate(self.pattern_lines):
             # Represent each tile or empty space in the pattern line
             line_representation = [tile.name if tile is not None else 'None' for tile in line[:index+1]]
             print(f"Line {index + 1}: {line_representation}")
 
-        print("\nWall:")
+    def print_wall(self):
+        print("Wall:")
         for row in self.wall:
             # Represent each tile or empty space on the wall
             row_representation = [tile.name if tile is not None else 'None' for tile in row]
             print(row_representation)
 
-        print("\nFloor Line:")
+    def print_floor_line(self):
+        print("Floor Line:")
         # Represent tiles in the floor line
         floor_line_representation = [tile.name for tile in self.floor_line]
         print(floor_line_representation or 'Empty')
 
+
+
     # Additional methods for scoring, handling the floor line, etc., can be added here.
         
-    #TODO: Check the process of adding tiles to floor line
     def add_tiles_to_floor_line(self, tiles):
         """
         Add tiles to the floor line, respecting the maximum capacity of 7 tiles.
@@ -107,7 +130,12 @@ class PlayerBoard:
 
         # Add any excess tiles to the box lid
         if excess_tiles:
+            print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+            print(f"Floor line is full! Adding {len(excess_tiles)} excess tiles to the box lid.")
+            print(f"box lid tiles: {len(self.box_lid.tiles)}")
             self.box_lid.add_tiles(excess_tiles)
+            print(f"box lid tiles after adding: {len(self.box_lid.tiles)}")
+
 
     def move_tiles_to_wall_and_score(self):
         """
@@ -133,6 +161,11 @@ class PlayerBoard:
                     # Move the remaining tiles in the completed line to the box lid
                     excess_tiles = [tile for tile in pattern_line if tile is not None][1:]  # Skip the first tile which was moved to the wall
                     if excess_tiles:
+                        print(f"box lid size before moving: {len(self.box_lid.tiles)}")
+                        print(f"Moving {len(excess_tiles)} excess tiles to the box lid.")
+                        print(f"box lid size after moving: {len(self.box_lid.tiles)}")
+                        print(f"excess tiles: {[tile.name for tile in excess_tiles]}")
+
                         self.box_lid.add_tiles(excess_tiles)
                 
                 # Clear the pattern line after moving tiles to the wall and box lid
@@ -140,6 +173,9 @@ class PlayerBoard:
 
         # Score the floor line and clear it
         score += self.score_floor_line()
+        print("Floor line after scoring: ", [tile.name for tile in self.floor_line])
+        tiles_to_box_lid = [tile for tile in self.floor_line if not isinstance(tile, StartingPlayerTile)]
+        self.box_lid.add_tiles(tiles_to_box_lid)
         self.floor_line = []
 
         # Return the total score for this round
@@ -186,6 +222,7 @@ class PlayerBoard:
     def score_floor_line(self):
         penalties = [1, 1, 2, 2, 2, 3, 3]  # Base penalties for the first 7 tiles
         score = -sum(penalties[:len(self.floor_line)])  # Calculate penalties for up to the first 7 tiles
+        print(f"Penalties for the floor line: {score} points.")
         if len(self.floor_line) > 7:  # For more than 7 tiles, each additional tile incurs -3 points
             score -= (len(self.floor_line) - 7) * 3
         return score
@@ -193,3 +230,19 @@ class PlayerBoard:
     def has_starting_player_tile(self):
         """Check if this player board has the starting player tile on the floor line."""
         return any(isinstance(tile, StartingPlayerTile) for tile in self.floor_line)
+    
+    def has_completed_row_on_wall(self):
+        for row in self.wall:
+            if None not in row:
+                return True
+        return False
+    
+    def count_placed_tiles(self):
+        """Count the number of tiles placed on the pattern lines and wall."""
+        wall_tiles_count = sum(tile is not None for row in self.wall for tile in row)
+        pattern_lines_tiles_count = sum(tile is not None for line in self.pattern_lines for tile in line)
+        floor_line_tiles_count = len([tile for tile in self.floor_line if not isinstance(tile, StartingPlayerTile)])
+
+        # Sum the counts from the wall and pattern lines
+        total_placed_tiles = wall_tiles_count + pattern_lines_tiles_count + floor_line_tiles_count
+        return total_placed_tiles

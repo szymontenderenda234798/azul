@@ -16,3 +16,4 @@ class CentralFactory(Factory):
     
     def add_starting_player_tile(self):
         self.tiles.append(StartingPlayerTile())
+        self.starting_player_marker_taken = False

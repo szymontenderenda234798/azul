@@ -5,6 +5,7 @@ class Player:
         self.name = name
         self.score = 0
         self.board = PlayerBoard()
+        self.game_engine = None
 
     def place_tile_in_pattern_line(self, tile_color, row, tile_count):
         self.board.place_tile_in_pattern_line(tile_color, row, tile_count)
@@ -12,8 +13,8 @@ class Player:
     def place_starting_player_tile_on_floor_line(self):
         self.board.place_starting_player_tile_on_floor_line()
 
-    def take_turn(self):
-        pass  # This will be implemented in subclasses
+    def make_decision(self):
+        pass
 
     def select_factory(self):
         pass
@@ -30,3 +31,9 @@ class Player:
 
     def has_starting_player_tile(self):
         return self.board.has_starting_player_tile()
+    
+    def has_completed_row_on_wall(self):
+        return self.board.has_completed_row_on_wall()
+    
+    def move_tiles_to_wall_and_score(self):
+        return self.board.move_tiles_to_wall_and_score()

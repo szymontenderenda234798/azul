@@ -4,36 +4,13 @@ from enums.tile_color import TileColor
 
 class HumanPlayer(Player):
 
-    def take_turn(self):
-        print(f"{self.name}'s turn")
-
-        self.game_engine.print_game_state()
-
+    def make_decision(self):
         factory_index = self.select_factory()
         selected_factory = self.game_engine.central_factory if factory_index == -1 else self.game_engine.factories[factory_index]
         selected_color = self.select_color(selected_factory)
         pattern_line_index = self.select_pattern_line()
 
-        # Process the selection
-        if factory_index >= 0:
-            selected_factory = self.game_engine.factories[factory_index]
-        else:
-            selected_factory = self.game_engine.central_factory
-            if any(isinstance(tile, StartingPlayerTile) for tile in selected_factory.tiles):
-                print("Starting player marker taken!")
-                selected_factory.starting_player_marker_taken = True
-                for tile in selected_factory.tiles:
-                    if isinstance(tile, StartingPlayerTile):
-                        selected_factory.tiles.remove(tile)
-                        break
-                self.board.place_starting_player_tile_on_floor_line()
-
-        selected_tiles = selected_factory.remove_and_return_tiles_of_color(selected_color)
-        remaining_tiles = selected_factory.get_and_clear_remaining_tiles()
-        self.game_engine.central_factory.add_tiles(remaining_tiles)
-
-        # Attempt to place tiles on player's board
-        self.board.place_tile_in_pattern_line(selected_color, pattern_line_index, len(selected_tiles))
+        return factory_index, selected_color, pattern_line_index
 
     def select_factory(self):
         # Determine if the central factory has tiles other than just the starting player tile

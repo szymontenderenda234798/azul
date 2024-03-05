@@ -16,3 +16,6 @@ class Factory:
         remaining_tiles = self.tiles[:]
         self.tiles = []
         return remaining_tiles
+    
+    def clear(self):
+        self.tiles = []
