@@ -112,18 +112,21 @@ class NeuralNetworkInterface:
         binary_array = []
         buffer = 0
         tiles = len(central_factory.tiles)
-        if isinstance(central_factory.tiles[0], StartingPlayerTile):
-            binary_array.append(1)
-            tiles -= 1
-            buffer = 1
+        if tiles == 0:
+            binary_array.extend([0] * 136)
         else:
-            binary_array.append(0)
-        for i in range(27):
-            if i < tiles:
-                for color in TileColor:
-                    binary_array.append(1 if central_factory.tiles[i + buffer].color == color else 0)
+            if isinstance(central_factory.tiles[0], StartingPlayerTile):
+                binary_array.append(1)
+                tiles -= 1
+                buffer = 1
             else:
-                binary_array.extend([0] * 5)
+                binary_array.append(0)
+            for i in range(27):
+                if i < tiles:
+                    for color in TileColor:
+                        binary_array.append(1 if central_factory.tiles[i + buffer].color == color else 0)
+                else:
+                    binary_array.extend([0] * 5)
 
         return binary_array
     
