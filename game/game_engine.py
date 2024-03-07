@@ -13,7 +13,7 @@ class GameEngine:
         self.game_over = False
         self.box_lid = BoxLid()
         self.tile_bag = TileBag(self.box_lid)
-        self.neural_network_interface = NeuralNetworkInterface(self)
+        self.neural_network_interface = NeuralNetworkInterface()
         self.factories = []
         self.current_player_index = 0
         self.setup_game()
@@ -45,20 +45,21 @@ class GameEngine:
         print("Starting the game...")
 
         self.round_number = 0
-        while not self.game_over:
+        # while not self.game_over:
+        while self.round_number < 1:
             self.round_number += 1
             print(f"\n-------------------------------------\nRound {self.round_number}\n-------------------------------------")
             self.play_round()
-            self.log_points()
+            # self.log_points()
             # After each round, check if the game should end
             self.check_game_over()
         self.print_final_scores()
 
-    def log_points(self):
-        with open('game/logs/example.txt', 'a') as file:
-            file.write(f"Points after round: {self.round_number} \n")
-            for player in self.players:
-                file.write(f"{player.name}: {player.score} points\n")
+    # def log_points(self):
+    #     with open('game/logs/example.txt', 'a') as file:
+    #         file.write(f"Points after round: {self.round_number} \n")
+    #         for player in self.players:
+    #             file.write(f"{player.name}: {player.score} points\n")
 
     def next_player(self):
         self.current_player_index = (self.current_player_index + 1) % self.player_count
@@ -130,13 +131,11 @@ class GameEngine:
             print(f"\n{player.name} board before moving, but after last move:")
             player.board.print_board()
 
-        for i, player in enumerate(self.players):
-            if player.has_starting_player_tile():  # You need to implement this method in PlayerBoard
-                # Set this player as the starting player for the next round
-                self.current_player_index = i
-                self.starting_player_index = i  # Keep track of the new starting player
-                break  # Only one player can have the starting player tile, so break once found
-
+        self.set_new_starting_player()
+        self.players[0].print_board()
+        print(self.neural_network_interface.pattern_lines_to_network_input(self.players[0].board.pattern_lines))
+        print(self.neural_network_interface.wall_to_network_input(self.players[0].board.wall))
+        print(self.neural_network_interface.floor_line_to_network_input(self.players[0].board.floor_line))
         
         print(f"\n-------------------------------------\nSCORING AND MOVING TO WALL\n-------------------------------------")
         for player in self.players:
@@ -148,6 +147,14 @@ class GameEngine:
 
         self.refresh_factories()
         self.check_game_over()
+
+    def set_new_starting_player(self):
+        for i, player in enumerate(self.players):
+            if player.has_starting_player_tile():  # You need to implement this method in PlayerBoard
+                # Set this player as the starting player for the next round
+                self.current_player_index = i
+                self.starting_player_index = i  # Keep track of the new starting player
+                break  # Only one player can have the starting player tile, so break once found
 
     #TODO: Implement the following methods
     def refresh_factories(self):
