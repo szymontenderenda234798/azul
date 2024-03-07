@@ -1,5 +1,6 @@
 import numpy as np
 from enums.tile_color import TileColor
+from model.starting_player_tile import StartingPlayerTile
 
 class NeuralNetworkInterface:
     def __init__(self, enable_generation_logging=False):
@@ -13,6 +14,8 @@ class NeuralNetworkInterface:
         sorted_players = self.iterate_from_index(game_engine.players, game_engine.current_player_index)
         for player in sorted_players:
             binary_array.extend(self.player_board_to_network_input(player.board))
+        binary_array.extend(self.factories_to_network_input(game_engine.factories))
+        binary_array.extend(self.central_factory_to_network_input(game_engine.central_factory))
         return binary_array
 
     def player_board_to_network_input(self, player_board):
@@ -79,6 +82,48 @@ class NeuralNetworkInterface:
         # Add 1 neuron for each tile in the floor line, indicating occupancy
         for i in range(8):
             binary_array.append(1 if i < len(floor_line) else 0)
+
+        return binary_array
+    
+    def factories_to_network_input(self, factories):
+        """
+        Transforms the factories state into the input format required by the neural network.
+        """
+        binary_array = []
+
+        # Add 1 neuron for each tile in the floor line, indicating occupancy
+        for factory in factories:
+            tiles = len(factory.tiles)
+            if tiles > 0:
+                for i in range(4):
+                    if i <= tiles:
+                        for color in TileColor:
+                            binary_array.append(1 if factory.tiles[i].color == color else 0)
+            else:
+                binary_array.extend([0] * 20)
+
+        
+        return binary_array
+    
+    def central_factory_to_network_input(self, central_factory):
+        """
+        Transforms the central factory state into the input format required by the neural network.
+        """
+        binary_array = []
+        buffer = 0
+        tiles = len(central_factory.tiles)
+        if isinstance(central_factory.tiles[0], StartingPlayerTile):
+            binary_array.append(1)
+            tiles -= 1
+            buffer = 1
+        else:
+            binary_array.append(0)
+        for i in range(27):
+            if i < tiles:
+                for color in TileColor:
+                    binary_array.append(1 if central_factory.tiles[i + buffer].color == color else 0)
+            else:
+                binary_array.extend([0] * 5)
 
         return binary_array
     

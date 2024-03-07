@@ -1,0 +1,1473 @@
+Starting the game...
+
+-------------------------------------
+Round 1
+-------------------------------------
+[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+608
+
+-------------------------------------
+Random Player 1's turn
+-------------------------------------
+
+Current Game State:
+
+Factory 1: ['red', 'red', 'blue', 'red']
+Factory 2: ['black', 'yellow', 'yellow', 'yellow']
+Factory 3: ['white', 'black', 'black', 'black']
+Factory 4: ['yellow', 'yellow', 'yellow', 'black']
+Factory 5: ['blue', 'black', 'white', 'blue']
+Factory 6: ['yellow', 'black', 'black', 'yellow']
+Factory 7: ['white', 'blue', 'white', 'black']
+Factory 8: ['black', 'blue', 'yellow', 'red']
+Factory 9: ['white', 'yellow', 'black', 'black']
+Central Factory: ['starting player tile']
+
+Random Player 1's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 2's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 3's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 4's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 1 placed 2 YELLOW tiles in pattern line 4.
+[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+608
+
+-------------------------------------
+Random Player 2's turn
+-------------------------------------
+
+Current Game State:
+
+Factory 1: ['red', 'red', 'blue', 'red']
+Factory 2: ['black', 'yellow', 'yellow', 'yellow']
+Factory 3: ['white', 'black', 'black', 'black']
+Factory 4: ['yellow', 'yellow', 'yellow', 'black']
+Factory 5: ['blue', 'black', 'white', 'blue']
+Factory 6: []
+Factory 7: ['white', 'blue', 'white', 'black']
+Factory 8: ['black', 'blue', 'yellow', 'red']
+Factory 9: ['white', 'yellow', 'black', 'black']
+Central Factory: ['starting player tile', 'black', 'black']
+
+Random Player 1's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['yellow', 'yellow', 'None', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 2's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 3's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 4's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 2 placed 3 YELLOW tiles in pattern line 4.
+[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+608
+
+-------------------------------------
+Random Player 3's turn
+-------------------------------------
+
+Current Game State:
+
+Factory 1: ['red', 'red', 'blue', 'red']
+Factory 2: []
+Factory 3: ['white', 'black', 'black', 'black']
+Factory 4: ['yellow', 'yellow', 'yellow', 'black']
+Factory 5: ['blue', 'black', 'white', 'blue']
+Factory 6: []
+Factory 7: ['white', 'blue', 'white', 'black']
+Factory 8: ['black', 'blue', 'yellow', 'red']
+Factory 9: ['white', 'yellow', 'black', 'black']
+Central Factory: ['starting player tile', 'black', 'black', 'black']
+
+Random Player 1's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['yellow', 'yellow', 'None', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 2's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['yellow', 'yellow', 'yellow', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 3's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 4's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 3 placed 1 WHITE tiles in pattern line 5.
+[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+608
+
+-------------------------------------
+Random Player 4's turn
+-------------------------------------
+
+Current Game State:
+
+Factory 1: ['red', 'red', 'blue', 'red']
+Factory 2: []
+Factory 3: ['white', 'black', 'black', 'black']
+Factory 4: ['yellow', 'yellow', 'yellow', 'black']
+Factory 5: []
+Factory 6: []
+Factory 7: ['white', 'blue', 'white', 'black']
+Factory 8: ['black', 'blue', 'yellow', 'red']
+Factory 9: ['white', 'yellow', 'black', 'black']
+Central Factory: ['starting player tile', 'black', 'black', 'black', 'blue', 'black', 'blue']
+
+Random Player 1's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['yellow', 'yellow', 'None', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 2's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['yellow', 'yellow', 'yellow', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 3's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['white', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 4's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 4 placed 2 BLACK tiles in pattern line 5.
+[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+608
+
+-------------------------------------
+Random Player 1's turn
+-------------------------------------
+
+Current Game State:
+
+Factory 1: ['red', 'red', 'blue', 'red']
+Factory 2: []
+Factory 3: ['white', 'black', 'black', 'black']
+Factory 4: ['yellow', 'yellow', 'yellow', 'black']
+Factory 5: []
+Factory 6: []
+Factory 7: ['white', 'blue', 'white', 'black']
+Factory 8: ['black', 'blue', 'yellow', 'red']
+Factory 9: []
+Central Factory: ['starting player tile', 'black', 'black', 'black', 'blue', 'black', 'blue', 'white', 'yellow']
+
+Random Player 1's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['yellow', 'yellow', 'None', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 2's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['yellow', 'yellow', 'yellow', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 3's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['white', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 4's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['black', 'black', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Starting player marker taken!
+Random Player 1 placed 2 BLUE tiles in pattern line 3.
+[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+608
+
+-------------------------------------
+Random Player 2's turn
+-------------------------------------
+
+Current Game State:
+
+Factory 1: ['red', 'red', 'blue', 'red']
+Factory 2: []
+Factory 3: ['white', 'black', 'black', 'black']
+Factory 4: ['yellow', 'yellow', 'yellow', 'black']
+Factory 5: []
+Factory 6: []
+Factory 7: ['white', 'blue', 'white', 'black']
+Factory 8: ['black', 'blue', 'yellow', 'red']
+Factory 9: []
+Central Factory: ['black', 'black', 'black', 'black', 'white', 'yellow']
+
+Random Player 1's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['blue', 'blue', 'None']
+Line 4: ['yellow', 'yellow', 'None', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+['starting player tile']
+
+Random Player 2's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['yellow', 'yellow', 'yellow', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 3's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['white', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 4's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['black', 'black', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 2 placed 1 BLUE tiles in pattern line 3.
+[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+608
+
+-------------------------------------
+Random Player 3's turn
+-------------------------------------
+
+Current Game State:
+
+Factory 1: ['red', 'red', 'blue', 'red']
+Factory 2: []
+Factory 3: ['white', 'black', 'black', 'black']
+Factory 4: ['yellow', 'yellow', 'yellow', 'black']
+Factory 5: []
+Factory 6: []
+Factory 7: []
+Factory 8: ['black', 'blue', 'yellow', 'red']
+Factory 9: []
+Central Factory: ['black', 'black', 'black', 'black', 'white', 'yellow', 'white', 'white', 'black']
+
+Random Player 1's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['blue', 'blue', 'None']
+Line 4: ['yellow', 'yellow', 'None', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+['starting player tile']
+
+Random Player 2's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['blue', 'None', 'None']
+Line 4: ['yellow', 'yellow', 'yellow', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 3's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['white', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 4's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['black', 'black', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 3 placed 3 YELLOW tiles in pattern line 3.
+[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+608
+
+-------------------------------------
+Random Player 4's turn
+-------------------------------------
+
+Current Game State:
+
+Factory 1: ['red', 'red', 'blue', 'red']
+Factory 2: []
+Factory 3: ['white', 'black', 'black', 'black']
+Factory 4: []
+Factory 5: []
+Factory 6: []
+Factory 7: []
+Factory 8: ['black', 'blue', 'yellow', 'red']
+Factory 9: []
+Central Factory: ['black', 'black', 'black', 'black', 'white', 'yellow', 'white', 'white', 'black', 'black']
+
+Random Player 1's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['blue', 'blue', 'None']
+Line 4: ['yellow', 'yellow', 'None', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+['starting player tile']
+
+Random Player 2's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['blue', 'None', 'None']
+Line 4: ['yellow', 'yellow', 'yellow', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 3's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['yellow', 'yellow', 'yellow']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['white', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 4's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['black', 'black', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 4 placed 1 BLUE tiles in pattern line 2.
+[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+608
+
+-------------------------------------
+Random Player 1's turn
+-------------------------------------
+
+Current Game State:
+
+Factory 1: []
+Factory 2: []
+Factory 3: ['white', 'black', 'black', 'black']
+Factory 4: []
+Factory 5: []
+Factory 6: []
+Factory 7: []
+Factory 8: ['black', 'blue', 'yellow', 'red']
+Factory 9: []
+Central Factory: ['black', 'black', 'black', 'black', 'white', 'yellow', 'white', 'white', 'black', 'black', 'red', 'red', 'red']
+
+Random Player 1's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['blue', 'blue', 'None']
+Line 4: ['yellow', 'yellow', 'None', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+['starting player tile']
+
+Random Player 2's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['blue', 'None', 'None']
+Line 4: ['yellow', 'yellow', 'yellow', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 3's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['yellow', 'yellow', 'yellow']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['white', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 4's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['blue', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['black', 'black', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 1 placed 1 BLUE tiles in pattern line 1.
+[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+608
+
+-------------------------------------
+Random Player 2's turn
+-------------------------------------
+
+Current Game State:
+
+Factory 1: []
+Factory 2: []
+Factory 3: ['white', 'black', 'black', 'black']
+Factory 4: []
+Factory 5: []
+Factory 6: []
+Factory 7: []
+Factory 8: []
+Factory 9: []
+Central Factory: ['black', 'black', 'black', 'black', 'white', 'yellow', 'white', 'white', 'black', 'black', 'red', 'red', 'red', 'black', 'yellow', 'red']
+
+Random Player 1's board:
+Pattern Lines:
+Line 1: ['blue']
+Line 2: ['None', 'None']
+Line 3: ['blue', 'blue', 'None']
+Line 4: ['yellow', 'yellow', 'None', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+['starting player tile']
+
+Random Player 2's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['blue', 'None', 'None']
+Line 4: ['yellow', 'yellow', 'yellow', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 3's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['yellow', 'yellow', 'yellow']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['white', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 4's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['blue', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['black', 'black', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 2 placed 7 BLACK tiles in pattern line 1.
+[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+608
+
+-------------------------------------
+Random Player 3's turn
+-------------------------------------
+
+Current Game State:
+
+Factory 1: []
+Factory 2: []
+Factory 3: ['white', 'black', 'black', 'black']
+Factory 4: []
+Factory 5: []
+Factory 6: []
+Factory 7: []
+Factory 8: []
+Factory 9: []
+Central Factory: ['white', 'yellow', 'white', 'white', 'red', 'red', 'red', 'yellow', 'red']
+
+Random Player 1's board:
+Pattern Lines:
+Line 1: ['blue']
+Line 2: ['None', 'None']
+Line 3: ['blue', 'blue', 'None']
+Line 4: ['yellow', 'yellow', 'None', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+['starting player tile']
+
+Random Player 2's board:
+Pattern Lines:
+Line 1: ['black']
+Line 2: ['None', 'None']
+Line 3: ['blue', 'None', 'None']
+Line 4: ['yellow', 'yellow', 'yellow', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+['black', 'black', 'black', 'black', 'black', 'black']
+
+Random Player 3's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['yellow', 'yellow', 'yellow']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['white', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 4's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['blue', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['black', 'black', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 3 placed 3 BLACK tiles in pattern line 3.
+[0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+608
+
+-------------------------------------
+Random Player 4's turn
+-------------------------------------
+
+Current Game State:
+
+Factory 1: []
+Factory 2: []
+Factory 3: []
+Factory 4: []
+Factory 5: []
+Factory 6: []
+Factory 7: []
+Factory 8: []
+Factory 9: []
+Central Factory: ['white', 'yellow', 'white', 'white', 'red', 'red', 'red', 'yellow', 'red', 'white']
+
+Random Player 1's board:
+Pattern Lines:
+Line 1: ['blue']
+Line 2: ['None', 'None']
+Line 3: ['blue', 'blue', 'None']
+Line 4: ['yellow', 'yellow', 'None', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+['starting player tile']
+
+Random Player 2's board:
+Pattern Lines:
+Line 1: ['black']
+Line 2: ['None', 'None']
+Line 3: ['blue', 'None', 'None']
+Line 4: ['yellow', 'yellow', 'yellow', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+['black', 'black', 'black', 'black', 'black', 'black']
+
+Random Player 3's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['yellow', 'yellow', 'yellow']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['white', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+['black', 'black', 'black']
+
+Random Player 4's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['blue', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['black', 'black', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 4 placed 2 YELLOW tiles in pattern line 3.
+[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+608
+
+-------------------------------------
+Random Player 1's turn
+-------------------------------------
+
+Current Game State:
+
+Factory 1: []
+Factory 2: []
+Factory 3: []
+Factory 4: []
+Factory 5: []
+Factory 6: []
+Factory 7: []
+Factory 8: []
+Factory 9: []
+Central Factory: ['white', 'white', 'white', 'red', 'red', 'red', 'red', 'white']
+
+Random Player 1's board:
+Pattern Lines:
+Line 1: ['blue']
+Line 2: ['None', 'None']
+Line 3: ['blue', 'blue', 'None']
+Line 4: ['yellow', 'yellow', 'None', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+['starting player tile']
+
+Random Player 2's board:
+Pattern Lines:
+Line 1: ['black']
+Line 2: ['None', 'None']
+Line 3: ['blue', 'None', 'None']
+Line 4: ['yellow', 'yellow', 'yellow', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+['black', 'black', 'black', 'black', 'black', 'black']
+
+Random Player 3's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['yellow', 'yellow', 'yellow']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['white', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+['black', 'black', 'black']
+
+Random Player 4's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['blue', 'None']
+Line 3: ['yellow', 'yellow', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['black', 'black', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 1 placed 4 WHITE tiles in pattern line 3.
+[0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+608
+
+-------------------------------------
+Random Player 2's turn
+-------------------------------------
+
+Current Game State:
+
+Factory 1: []
+Factory 2: []
+Factory 3: []
+Factory 4: []
+Factory 5: []
+Factory 6: []
+Factory 7: []
+Factory 8: []
+Factory 9: []
+Central Factory: ['red', 'red', 'red', 'red']
+
+Random Player 1's board:
+Pattern Lines:
+Line 1: ['blue']
+Line 2: ['None', 'None']
+Line 3: ['blue', 'blue', 'None']
+Line 4: ['yellow', 'yellow', 'None', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+['starting player tile', 'white', 'white', 'white', 'white']
+
+Random Player 2's board:
+Pattern Lines:
+Line 1: ['black']
+Line 2: ['None', 'None']
+Line 3: ['blue', 'None', 'None']
+Line 4: ['yellow', 'yellow', 'yellow', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+['black', 'black', 'black', 'black', 'black', 'black']
+
+Random Player 3's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['yellow', 'yellow', 'yellow']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['white', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+['black', 'black', 'black']
+
+Random Player 4's board:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['blue', 'None']
+Line 3: ['yellow', 'yellow', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['black', 'black', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 2 placed 4 RED tiles in pattern line 1.
+
+-------------------------------------
+END OF ROUND
+-------------------------------------
+
+Random Player 1 board before moving, but after last move:
+Pattern Lines:
+Line 1: ['blue']
+Line 2: ['None', 'None']
+Line 3: ['blue', 'blue', 'None']
+Line 4: ['yellow', 'yellow', 'None', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+['starting player tile', 'white', 'white', 'white', 'white']
+
+Random Player 2 board before moving, but after last move:
+Pattern Lines:
+Line 1: ['black']
+Line 2: ['None', 'None']
+Line 3: ['blue', 'None', 'None']
+Line 4: ['yellow', 'yellow', 'yellow', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+['black', 'black', 'black', 'black', 'black', 'black', 'red']
+
+Random Player 3 board before moving, but after last move:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['yellow', 'yellow', 'yellow']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['white', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+['black', 'black', 'black']
+
+Random Player 4 board before moving, but after last move:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['blue', 'None']
+Line 3: ['yellow', 'yellow', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['black', 'black', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+-------------------------------------
+SCORING AND MOVING TO WALL
+-------------------------------------
+
+Random Player 1 scored -7 points this round.
+Random Player 1 board after moving:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['blue', 'blue', 'None']
+Line 4: ['yellow', 'yellow', 'None', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['blue', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 2 scored -13 points this round.
+Random Player 2 board after moving:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['blue', 'None', 'None']
+Line 4: ['yellow', 'yellow', 'yellow', 'None']
+Line 5: ['None', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'black', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 3 scored -3 points this round.
+Random Player 3 board after moving:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['None', 'None']
+Line 3: ['None', 'None', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['white', 'None', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'yellow', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+Random Player 4 scored 0 points this round.
+Random Player 4 board after moving:
+Pattern Lines:
+Line 1: ['None']
+Line 2: ['blue', 'None']
+Line 3: ['yellow', 'yellow', 'None']
+Line 4: ['None', 'None', 'None', 'None']
+Line 5: ['black', 'black', 'None', 'None', 'None']
+
+Wall:
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+['None', 'None', 'None', 'None', 'None']
+
+Floor Line:
+Empty
+
+-------------------------------------
+FINAL SCORES
+-------------------------------------
+Random Player 1: -7 points
+Random Player 2: -13 points
+Random Player 3: -3 points
+Random Player 4: 0 points
+Winner: Random Player 4
