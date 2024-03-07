@@ -67,6 +67,8 @@ class GameEngine:
     def play_round(self):
         while True:
             current_player = self.players[self.current_player_index]
+            print(self.neural_network_interface.game_state_to_network_input(self))
+            print(len(self.neural_network_interface.game_state_to_network_input(self)))
             self.play_turn(current_player)
 
             # Move to the next player
@@ -79,7 +81,6 @@ class GameEngine:
 
     def play_turn(self, player):
         print(f"\n-------------------------------------\n{player.name}'s turn\n-------------------------------------")
-        self.neural_network_interface.game_state_to_network_input()
 
         self.print_game_state()
         factory_index, selected_color, pattern_line_index = player.make_decision()
@@ -132,10 +133,6 @@ class GameEngine:
             player.board.print_board()
 
         self.set_new_starting_player()
-        self.players[0].print_board()
-        print(self.neural_network_interface.pattern_lines_to_network_input(self.players[0].board.pattern_lines))
-        print(self.neural_network_interface.wall_to_network_input(self.players[0].board.wall))
-        print(self.neural_network_interface.floor_line_to_network_input(self.players[0].board.floor_line))
         
         print(f"\n-------------------------------------\nSCORING AND MOVING TO WALL\n-------------------------------------")
         for player in self.players:

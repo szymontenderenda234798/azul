@@ -5,16 +5,22 @@ class NeuralNetworkInterface:
     def __init__(self, enable_generation_logging=False):
         self.enable_generation_logging = enable_generation_logging
 
-    def game_state_to_network_input(self):
+    def game_state_to_network_input(self, game_engine):
         """
         Transforms the current game state into the input format required by the neural network.
         """
+        binary_array = []
+        sorted_players = self.iterate_from_index(game_engine.players, game_engine.current_player_index)
+        for player in sorted_players:
+            binary_array.extend(self.player_board_to_network_input(player.board))
+        return binary_array
 
     def player_board_to_network_input(self, player_board):
         binary_array = []
         binary_array.extend(self.pattern_lines_to_network_input(player_board.pattern_lines))
         binary_array.extend(self.wall_to_network_input(player_board.wall))
         binary_array.extend(self.floor_line_to_network_input(player_board.floor_line))
+        return binary_array
 
     def pattern_lines_to_network_input(self, pattern_lines):
         """
@@ -75,3 +81,14 @@ class NeuralNetworkInterface:
             binary_array.append(1 if i < len(floor_line) else 0)
 
         return binary_array
+    
+    def iterate_from_index(self, list, start_index):
+        n = len(list)  # Length of the list
+        reordered_list = []
+        
+        for i in range(n):
+            # Calculate the current index using modulus to cycle back to the beginning
+            current_index = (start_index + i) % n
+            reordered_list.append(list[current_index])
+        
+        return reordered_list
