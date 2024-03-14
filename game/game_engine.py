@@ -12,10 +12,11 @@ class GameEngine:
         self.player_count = len(players)
         self.game_over = False
         self.box_lid = BoxLid()
-        self.tile_bag = TileBag(self.box_lid)
+        self.tile_bag = TileBag(self.box_lid, self)
         self.neural_network_interface = NeuralNetworkInterface()
         self.factories = []
         self.current_player_index = 0
+        self.print_enabled = False
         self.setup_game()
 
     def setup_game(self):
@@ -42,18 +43,22 @@ class GameEngine:
             player.board.box_lid = self.box_lid
 
     def play_game(self):
-        print("Starting the game...")
+        if self.print_enabled:
+            print("Starting the game...")
 
         self.round_number = 0
         while not self.game_over:
         # while self.round_number < 1:
             self.round_number += 1
-            print(f"\n-------------------------------------\nRound {self.round_number}\n-------------------------------------")
+            if self.print_enabled:
+                print(f"\n-------------------------------------\nRound {self.round_number}\n-------------------------------------")
             self.play_round()
             # self.log_points()
             # After each round, check if the game should end
             self.check_game_over()
         self.print_final_scores()
+        self.players[0].fitness += self.players[0].score
+        return self.players[0].fitness
 
     # def log_points(self):
     #     with open('game/logs/example.txt', 'a') as file:
@@ -67,8 +72,9 @@ class GameEngine:
     def play_round(self):
         while True:
             current_player = self.players[self.current_player_index]
-            print(self.neural_network_interface.game_state_to_network_input(self))
-            print(len(self.neural_network_interface.game_state_to_network_input(self)))
+            if self.print_enabled:
+                print(self.neural_network_interface.game_state_to_network_input(self))
+                print(len(self.neural_network_interface.game_state_to_network_input(self)))
             self.play_turn(current_player)
 
             # Move to the next player
@@ -80,7 +86,8 @@ class GameEngine:
                 break  # End the round
 
     def play_turn(self, player):
-        print(f"\n-------------------------------------\n{player.name}'s turn\n-------------------------------------")
+        if self.print_enabled:
+            print(f"\n-------------------------------------\n{player.name}'s turn\n-------------------------------------")
 
         self.print_game_state()
         factory_index, selected_color, pattern_line_index = player.make_decision()
@@ -88,7 +95,8 @@ class GameEngine:
         selected_factory = self.central_factory if factory_index == -1 else self.factories[factory_index]
         
         if any(isinstance(tile, StartingPlayerTile) for tile in selected_factory.tiles):
-                print("Starting player marker taken!")
+                if self.print_enabled:
+                    print("Starting player marker taken!")
                 selected_factory.starting_player_marker_taken = True
                 for tile in selected_factory.tiles:
                     if isinstance(tile, StartingPlayerTile):
@@ -101,7 +109,8 @@ class GameEngine:
         remaining_tiles = selected_factory.get_and_clear_remaining_tiles()
         self.central_factory.add_tiles(remaining_tiles)
         player.place_tile_in_pattern_line(selected_color, pattern_line_index, len(selected_tiles))
-        print(f"{player.name} placed {len(selected_tiles)} {selected_color.name} tiles in pattern line {pattern_line_index + 1}.")
+        if self.print_enabled:
+            print(f"{player.name} placed {len(selected_tiles)} {selected_color.name} tiles in pattern line {pattern_line_index + 1}.")
 
     def check_game_over(self):
         for player in self.players:
@@ -110,37 +119,45 @@ class GameEngine:
                 break
 
     def print_game_state(self):
-        print("\nCurrent Game State:\n")
+        if self.print_enabled:
+            print("\nCurrent Game State:\n")
 
         # Show available factories
         for i, factory in enumerate(self.factories, start=1):
-            print(f"Factory {i}: {[tile.name for tile in factory.tiles]}")
+            if self.print_enabled:
+                print(f"Factory {i}: {[tile.name for tile in factory.tiles]}")
         # Show the central factory
-        print(f"Central Factory: {[tile.name for tile in self.central_factory.tiles]}\n")
+        if self.print_enabled:
+            print(f"Central Factory: {[tile.name for tile in self.central_factory.tiles]}\n")
 
         # Show players' boards
-        for player in self.players:
-            player.print_board()
-            print("")  # Extra newline for spacing
+        if self.print_enabled:
+            for player in self.players:
+                player.print_board()
+                print("")  # Extra newline for spacing
 
         
     def end_round(self):
         """Handle the end of a round: Move tiles, score points, and check game over condition."""
-        print(f"\n-------------------------------------\nEND OF ROUND\n-------------------------------------")
+        if self.print_enabled:
+            print(f"\n-------------------------------------\nEND OF ROUND\n-------------------------------------")
 
         for player in self.players:
-            print(f"\n{player.name} board before moving, but after last move:")
-            player.board.print_board()
+            if self.print_enabled:
+                print(f"\n{player.name} board before moving, but after last move:")
+                player.board.print_board()
 
         self.set_new_starting_player()
         
-        print(f"\n-------------------------------------\nSCORING AND MOVING TO WALL\n-------------------------------------")
+        if self.print_enabled:
+            print(f"\n-------------------------------------\nSCORING AND MOVING TO WALL\n-------------------------------------")
         for player in self.players:
             score = player.move_tiles_to_wall_and_score()  # Assuming this method returns the score for the round
             player.score += score  # Assuming each player has a 'score' attribute
-            print(f"\n{player.name} scored {score} points this round.")
-            print(f"{player.name} board after moving:")
-            player.board.print_board()
+            if self.print_enabled:
+                print(f"\n{player.name} scored {score} points this round.")
+                print(f"{player.name} board after moving:")
+                player.board.print_board()
 
         self.refresh_factories()
         self.check_game_over()
@@ -166,40 +183,42 @@ class GameEngine:
 
     def print_final_scores(self):
         """Print the final scores of all players."""
-        print(f"\n-------------------------------------\nFINAL SCORES\n-------------------------------------")
-        for player in self.players:
-            print(f"{player.name}: {player.score} points")
+        if self.print_enabled:
+            print(f"\n-------------------------------------\nFINAL SCORES\n-------------------------------------")
+            for player in self.players:
+                print(f"{player.name}: {player.score} points")
         
         # Determine the winner (could be multiple in case of a tie)
         highest_score = max(player.score for player in self.players)
         winners = [player.name for player in self.players if player.score == highest_score]
-        if len(winners) > 1:
-            print(f"Tie between: {', '.join(winners)}")
-        else:
-            print(f"Winner: {winners[0]}")
+        if self.print_enabled:
+            if len(winners) > 1:
+                print(f"Tie between: {', '.join(winners)}")
+            else:
+                print(f"Winner: {winners[0]}")
 
-    # def count_tiles_in_game(self):
-    #     """Count the number of tiles in the factories, central factory, tile bag, and players' boards."""
-    #     factory_tile_count = sum(len(factory.tiles) for factory in self.factories)
-    #     print(f"Factory tile count (excluding StartingPlayerTile): {factory_tile_count}")
+    def count_tiles_in_game(self):
+        """Count the number of tiles in the factories, central factory, tile bag, and players' boards."""
+        factory_tile_count = sum(len(factory.tiles) for factory in self.factories)
+        print(f"Factory tile count (excluding StartingPlayerTile): {factory_tile_count}")
 
-    #     central_factory_tile_count = len([tile for tile in self.central_factory.tiles if not isinstance(tile, StartingPlayerTile)])
-    #     print(f"Central factory tile count (excluding StartingPlayerTile): {central_factory_tile_count}")
+        central_factory_tile_count = len([tile for tile in self.central_factory.tiles if not isinstance(tile, StartingPlayerTile)])
+        print(f"Central factory tile count (excluding StartingPlayerTile): {central_factory_tile_count}")
 
-    #     tile_bag_tile_count = len(self.tile_bag.tiles)
-    #     print(f"Tile bag tile count: {tile_bag_tile_count}")
+        tile_bag_tile_count = len(self.tile_bag.tiles)
+        print(f"Tile bag tile count: {tile_bag_tile_count}")
 
-    #     box_lid_tile_count = len(self.box_lid.tiles)
-    #     print(f"Box lid tile count: {box_lid_tile_count}")
+        box_lid_tile_count = len(self.box_lid.tiles)
+        print(f"Box lid tile count: {box_lid_tile_count}")
 
-    #     players_tile_count = sum(player.board.count_placed_tiles() for player in self.players)
-    #     print(f"Players' boards tile count: {players_tile_count}")
+        players_tile_count = sum(player.board.count_placed_tiles() for player in self.players)
+        print(f"Players' boards tile count: {players_tile_count}")
 
-    #     tile_count_sum = factory_tile_count + central_factory_tile_count + tile_bag_tile_count + players_tile_count + box_lid_tile_count
-    #     print(f"Total tile count (excluding StartingPlayerTile): {tile_count_sum}")
+        tile_count_sum = factory_tile_count + central_factory_tile_count + tile_bag_tile_count + players_tile_count + box_lid_tile_count
+        print(f"Total tile count (excluding StartingPlayerTile): {tile_count_sum}")
 
-    #     # Log the total tile count to a file
-    #     with open('game/logs/example.txt', 'a') as file:
-    #         file.write(f"{tile_count_sum}\n")
+        # Log the total tile count to a file
+        with open('game/logs/example.txt', 'a') as file:
+            file.write(f"{tile_count_sum}\n")
 
-    #     return tile_count_sum
+        return tile_count_sum

@@ -25,29 +25,34 @@ class PlayerBoard:
         :param pattern_line_index: The index of the pattern line (0-4).
         :param tile_count: The number of tiles being placed.
         """
-        if self.is_color_on_wall(tile_color, pattern_line_index):
-            # Redirect the tiles to the floor line
-            self.add_tiles_to_floor_line([Tile(tile_color)] * tile_count)
-        else:
-            pattern_line = self.pattern_lines[pattern_line_index]
-            line_capacity = pattern_line_index + 1  # The capacity matches the row index + 1
-            existing_tiles = sum(1 for tile in pattern_line if tile is not None)
-            space_left = line_capacity - existing_tiles
-
-            # Calculate how many tiles can be actually placed in the pattern line
-            tiles_to_place = min(space_left, tile_count)
-
-            if existing_tiles == 0 or (pattern_line[0] is not None and pattern_line[0].color == tile_color):
-                # Place as many tiles as possible into the pattern line
-                for i in range(existing_tiles, existing_tiles + tiles_to_place):
-                    pattern_line[i] = Tile(tile_color)
-                # Any excess tiles go to the floor line
-                excess_tiles = tile_count - tiles_to_place
-                if excess_tiles > 0:
-                    self.add_tiles_to_floor_line([Tile(tile_color)] * excess_tiles)
-            else:
-                # If the pattern line has tiles of a different color, use the new method to add all tiles to the floor line
+        if pattern_line_index < 5:
+            if self.is_color_on_wall(tile_color, pattern_line_index):
+                # Redirect the tiles to the floor line
                 self.add_tiles_to_floor_line([Tile(tile_color)] * tile_count)
+            else:
+                pattern_line = self.pattern_lines[pattern_line_index]
+                line_capacity = pattern_line_index + 1  # The capacity matches the row index + 1
+                existing_tiles = sum(1 for tile in pattern_line if tile is not None)
+                space_left = line_capacity - existing_tiles
+
+                # Calculate how many tiles can be actually placed in the pattern line
+                tiles_to_place = min(space_left, tile_count)
+
+                if existing_tiles == 0 or (pattern_line[0] is not None and pattern_line[0].color == tile_color):
+                    # Place as many tiles as possible into the pattern line
+                    for i in range(existing_tiles, existing_tiles + tiles_to_place):
+                        pattern_line[i] = Tile(tile_color)
+                    # Any excess tiles go to the floor line
+                    excess_tiles = tile_count - tiles_to_place
+                    if excess_tiles > 0:
+                        self.add_tiles_to_floor_line([Tile(tile_color)] * excess_tiles)
+                else:
+                    # If the pattern line has tiles of a different color, use the new method to add all tiles to the floor line
+                    self.add_tiles_to_floor_line([Tile(tile_color)] * tile_count)
+        else:
+            self.add_tiles_to_floor_line([Tile(tile_color)] * tile_count)
+
+            
 
     def is_color_on_wall(self, tile_color, pattern_line_index):
         """

@@ -4,11 +4,12 @@ from model.box_lid import BoxLid
 import random
 
 class TileBag:
-    def __init__(self, box_lid):
+    def __init__(self, box_lid, game_engine):
         # Initialize the bag with 20 tiles of each color, using the TileColor enum
         self.tiles = [Tile(color) for color in TileColor for _ in range(20)]
         random.shuffle(self.tiles)
         self.box_lid = box_lid
+        self.game_engine = game_engine
 
     def draw_tiles(self, number):
         """Draw a specified number of tiles from the bag. Refill from the box lid if empty."""
@@ -16,7 +17,9 @@ class TileBag:
             if not self.box_lid.tiles:
                 # This scenario implies the game might be in a state where no tiles are available to draw
                 # which could be a condition to check for game end or a specific game state
-                print("Not enough tiles available in the tile bag and the box lid is empty.")
+                if self.game_engine.print_enabled:
+                    print("Tiles in game: ", self.game_engine.count_tiles_in_game())
+                    print("Not enough tiles available in the tile bag and the box lid is empty.")
                 return []
 
             # Refill the tile bag from the box lid if the tile bag is empty or has fewer tiles than needed
