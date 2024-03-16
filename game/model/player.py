@@ -5,7 +5,7 @@ class Player:
         self.name = name
         self.score = 0
         self.fitness = 0
-        self.board = PlayerBoard()
+        self.board = PlayerBoard(self)
         self.game_engine = None
 
     def place_tile_in_pattern_line(self, tile_color, row, tile_count):

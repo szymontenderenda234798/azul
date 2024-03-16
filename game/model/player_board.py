@@ -3,10 +3,11 @@ from model.starting_player_tile import StartingPlayerTile
 from enums.tile_color import TileColor
 
 class PlayerBoard:
-    def __init__(self):
+    def __init__(self, player):
         self.pattern_lines = [[None, None, None, None, None] for _ in range(5)]  # 5 pattern lines, up to 5 tiles each
         self.wall = [[None for _ in range(5)] for _ in range(5)]  # 5x5 grid, initially empty
         self.floor_line = []  # Will hold tiles that overflow or are not placed
+        self.player = player
 
         # Define the fixed color pattern on the wall
         self.wall_pattern = [
@@ -68,19 +69,20 @@ class PlayerBoard:
         """Place the starting player tile on the floor line."""
         self.floor_line.append(StartingPlayerTile())
 
-    def move_tiles_to_wall(self):
-        """Move tiles from the pattern lines to the wall, based on the rules."""
-        for row_index, row in enumerate(self.pattern_lines):
-            if len(row) == row_index + 1:  # Check if the row is full
-                tile_color = row[0]
-                # Find the correct column based on the wall pattern
-                column_index = self.wall_pattern[row_index].index(tile_color)
-                if self.wall[row_index][column_index] is None:  # If space is empty
-                    self.wall[row_index][column_index] = tile_color
-                    self.pattern_lines[row_index] = []  # Clear the pattern line
-                else:
-                    # If the space on the wall is already filled, this should be handled as per game rules (e.g., move to floor line)
-                    pass
+    # def move_tiles_to_wall(self):
+    #     """Move tiles from the pattern lines to the wall, based on the rules."""
+    #     for row_index, row in enumerate(self.pattern_lines):
+    #         if len(row) == row_index + 1:  # Check if the row is full
+    #             tile_color = row[0]
+    #             # Find the correct column based on the wall pattern
+    #             column_index = self.wall_pattern[row_index].index(tile_color)
+    #             if self.wall[row_index][column_index] is None:  # If space is empty
+    #                 self.player.fitness += 10
+    #                 self.wall[row_index][column_index] = tile_color
+    #                 self.pattern_lines[row_index] = []  # Clear the pattern line
+    #             else:
+    #                 # If the space on the wall is already filled, this should be handled as per game rules (e.g., move to floor line)
+    #                 pass
 
     def print_board(self):
         self.print_pattern_lines()

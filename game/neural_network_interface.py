@@ -24,6 +24,12 @@ class NeuralNetworkInterface:
         binary_array.extend(self.wall_to_network_input(player_board.wall))
         binary_array.extend(self.floor_line_to_network_input(player_board.floor_line))
         return binary_array
+    
+    def simplest_input(self, game_engine):
+        binary_array = []
+        binary_array.extend(self.player_board_to_network_input(game_engine.players[0].board))
+        binary_array.extend(self.factories_to_network_input(game_engine.factories))
+        return binary_array
 
     def pattern_lines_to_network_input(self, pattern_lines):
         """

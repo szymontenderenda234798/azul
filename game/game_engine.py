@@ -47,8 +47,8 @@ class GameEngine:
             print("Starting the game...")
 
         self.round_number = 0
-        while not self.game_over:
-        # while self.round_number < 1:
+        # while not self.game_over:
+        while self.round_number < 1:
             self.round_number += 1
             if self.print_enabled:
                 print(f"\n-------------------------------------\nRound {self.round_number}\n-------------------------------------")

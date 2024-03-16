@@ -22,7 +22,7 @@ class NeuralNetworkPlayer(Player):
         return factory_index, selected_color, pattern_line_index
 
     def get_output(self):
-        input = self.nn_interface.game_state_to_network_input(self.game_engine)
+        input = self.nn_interface.simplest_input(self.game_engine)
         return self.neural_network.activate(input)
 
     def select_factory(self, output):
@@ -41,8 +41,6 @@ class NeuralNetworkPlayer(Player):
             # print(f"Preference: {preference}")
             if preference in valid_factories:
                 return preference - 1  # Adjust by -1 to align with list indexing
-            else:
-                self.fitness -= 0.1  # Apply penalty for invalid selection
         return None
     
     def select_color(self, selected_factory, output):
@@ -57,8 +55,6 @@ class NeuralNetworkPlayer(Player):
             preferred_color = color_mapping[preference_index]
             if preferred_color in available_colors:
                 return preferred_color  # Return the valid, preferred color based on network output
-            else:
-                self.fitness -= 0.1
         return None
     
     def select_pattern_line(self, output):
